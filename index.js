@@ -1,5 +1,6 @@
 const express = require("express");
 const { connect } = require("./db");
+const bodyParser = require("body-parser");
 const server = express();
 
 function runServer() {
@@ -9,6 +10,7 @@ function runServer() {
     return res.json({ message: "Hello World" });
   });
 
+  server.use(bodyParser.json());
   server.use("/api/v1/portfolios", require("./routes/portofolios"));
 
   const PORT = parseInt(process.env.PORT, 10) || 8080;

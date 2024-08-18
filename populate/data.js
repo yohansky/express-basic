@@ -30,6 +30,16 @@ const data = {
       startDate: "01/01/2010",
       endDate: "01/01/2011",
     },
+    {
+      title: "Laravel E-Commerce",
+      company: "WhoKnows",
+      companyWebsite: "www.google.com",
+      location: "Laravel, MySQL",
+      jobTitle: "FullStack Web",
+      description: "E-Commerce that provide users to post a product, delete a product, update product that user has",
+      startDate: "01/01/2010",
+      endDate: "01/01/2011",
+    },
   ],
 };
 
